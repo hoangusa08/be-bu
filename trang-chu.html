@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng Ứng Dụng Mô Phỏng 3D</title>
+    <!-- Tích hợp Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tích hợp Icon Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Font chữ Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+
+    <!-- Phần Header / Hero Section -->
+    <header class="bg-gradient-to-br from-blue-700 to-indigo-900 text-white pt-16 pb-28 px-6 relative overflow-hidden bg-pattern">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center justify-center p-3 bg-white/10 rounded-2xl backdrop-blur-sm mb-6 border border-white/20">
+                <i data-lucide="cuboid" class="w-8 h-8 text-blue-200"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Hệ Thống Mô Phỏng Không Gian</h1>
+            <p class="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto">
+                Khám phá hình học và không gian 3D thông qua các ứng dụng mô phỏng trực quan, sinh động.
+            </p>
+        </div>
+        
+        <!-- Hiệu ứng trang trí -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C49.71,109.4,110.47,117.9,171.4,115.1,223.3,112.7,273.6,97.5,321.39,56.44Z" fill="#f8fafc"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Phần Nội dung (Danh sách 4 ứng dụng) -->
+    <main class="flex-grow max-w-5xl mx-auto px-6 -mt-16 relative z-20 w-full pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+
+            <!-- Ứng dụng 1: Xếp khối gỗ -->
+            <a href="https://hoangusa08.github.io/be-bu/mo-phong-3d-xep-khoi-go.html" target="_blank" class="group bg-white rounded-2xl shadow-sm border border-slate-200 p-8 hover:shadow-xl hover:-translate-y-2 hover:border-blue-300 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-inner group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                    <i data-lucide="blocks" class="w-10 h-10"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-blue-700 transition-colors">Xếp Khối Gỗ 3D</h2>
+                <p class="text-slate-600 mb-6 flex-grow">Thực hành xếp và đếm các khối lập phương trong không gian 3D, giúp phát triển tư duy hình học và khả năng tưởng tượng.</p>
+                <div class="inline-flex items-center font-semibold text-blue-600 group-hover:text-blue-800">
+                    Trải nghiệm ngay <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+            <!-- Ứng dụng 2: Thể tích hòn đá -->
+            <a href="https://hoangusa08.github.io/be-bu/mo-phong-the-tich-tang-da.html" target="_blank" class="group bg-white rounded-2xl shadow-sm border border-slate-200 p-8 hover:shadow-xl hover:-translate-y-2 hover:border-cyan-300 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-50 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                <div class="w-20 h-20 bg-cyan-100 text-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-inner group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300">
+                    <i data-lucide="droplets" class="w-10 h-10"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-cyan-700 transition-colors">Thể Tích Hòn Đá</h2>
+                <p class="text-slate-600 mb-6 flex-grow">Quan sát mực nước dâng lên trong bể khi thả hòn đá vào để hiểu rõ nguyên lý đo thể tích của một vật thể có hình dạng không đều.</p>
+                <div class="inline-flex items-center font-semibold text-cyan-600 group-hover:text-cyan-800">
+                    Trải nghiệm ngay <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+            <!-- Ứng dụng 3: Tách khối chữ L -->
+            <a href="https://hoangusa08.github.io/mo-ta-tach-khoi-chu-l.html" target="_blank" class="group bg-white rounded-2xl shadow-sm border border-slate-200 p-8 hover:shadow-xl hover:-translate-y-2 hover:border-indigo-300 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                <div class="w-20 h-20 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 shadow-inner group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                    <i data-lucide="shapes" class="w-10 h-10"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-indigo-700 transition-colors">Tách Khối Chữ L</h2>
+                <p class="text-slate-600 mb-6 flex-grow">Tương tác trực tiếp để cắt và tách một khối hình chữ L phức tạp thành các khối hộp chữ nhật đơn giản, giúp dễ dàng tính toán diện tích, thể tích.</p>
+                <div class="inline-flex items-center font-semibold text-indigo-600 group-hover:text-indigo-800">
+                    Trải nghiệm ngay <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+            <!-- Ứng dụng 4: Thể tích hình hộp -->
+            <a href="https://hoangusa08.github.io/be-bu/mo-phong-the-tich-hinh-hop.html" target="_blank" class="group bg-white rounded-2xl shadow-sm border border-slate-200 p-8 hover:shadow-xl hover:-translate-y-2 hover:border-purple-300 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-purple-50 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
+                <div class="w-20 h-20 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-inner group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
+                    <i data-lucide="box" class="w-10 h-10"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-purple-700 transition-colors">Khám Phá Hình Hộp</h2>
+                <p class="text-slate-600 mb-6 flex-grow">Tự do thay đổi các kích thước chiều dài, chiều rộng, chiều cao của hình hộp chữ nhật để rút ra công thức tính thể tích một cách sinh động.</p>
+                <div class="inline-flex items-center font-semibold text-purple-600 group-hover:text-purple-800">
+                    Trải nghiệm ngay <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-8 mt-auto">
+        <div class="max-w-5xl mx-auto px-6 text-center text-slate-500">
+            <p>&copy; 2026 Hệ Thống Mô Phỏng Không Gian. Thiết kế dành cho giáo dục.</p>
+        </div>
+    </footer>
+
+    <!-- Khởi tạo Icon -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
